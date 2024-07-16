@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background:#b8a9c9 !important;
+}
+.gallery h2{
+  color:#f4f8f6;
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body .container {
+  max-width: 1100px;
+}
+
+#filter-buttons button {
+  border-radius: 3px;
+  background: #eca1a6;
+  border-color: transparent;
+}
+
+#filter-buttons button:hover {
+  background: #f8f8f6;
+  box-shadow:15px 20px 20px rgba(0,0,0,.6),
+        
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #a5a59d;
+  box-shadow:15px 20px 20px rgba(0,0,0,.3),
+        inset 2px 2px 4px white;
+}
+
+#filterable-cards .card {
+  width: 15rem;
+  background:#e3eaa7;
+  border:none !important;
+  border-radius:20px !important;
+  overflow:hidden;
+  box-shadow:15px 20px 20px rgba(0,0,0,.6),
+        inset 4px 4px 10px white;
+        transition:.2s;
+      
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
